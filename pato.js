@@ -58,3 +58,29 @@ function resetInterval() {
 }
 
 showSlide(0);
+
+
+
+
+// sidebar.js
+
+document.addEventListener('DOMContentLoaded', function() {
+    const showBtn = document.querySelector('.btn-show-sidebar');
+    const hideBtn = document.querySelector('.btn-hide-sidebar');
+    const sidebar = document.querySelector('.sidebar');
+
+    if (showBtn && sidebar) {
+        showBtn.addEventListener('click', function() {
+            sidebar.classList.add('show-sidebar');
+        });
+    }
+
+    if (hideBtn && sidebar) {
+        hideBtn.addEventListener('click', function() {
+            sidebar.classList.remove('show-sidebar');
+        });
+    }
+});
+
+
+
