@@ -1,3 +1,29 @@
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.wrap-menu-header');
+    if (window.scrollY > 10) { 
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.wrap-menu-header');
+    const logoImg = document.querySelector('.logo img');
+    if (window.scrollY > 10) {
+        header.classList.add('scrolled');
+        // Change logo image
+        if (logoImg && logoImg.dataset.logofixed) {
+            logoImg.src = logoImg.dataset.logofixed;
+        }
+    } else {
+        header.classList.remove('scrolled');
+        // Restore original logo image
+        logoImg.src = './assets/logo.png.webp';
+    }
+});
+
+
 const slides = document.querySelectorAll('.slide');
 const dots = document.querySelectorAll('.dot');
 const prevBtn = document.querySelector('.prev');

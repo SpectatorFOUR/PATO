@@ -5,15 +5,24 @@
 }
 
 .wrap-menu-header {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 120px;
     top: 0;
     left: 0;
     z-index: 100;
     border-top: 5px solid #ec1d25;
+    background-color: transparent; 
+    transition: background-color 0.4s;
 }
 
+.wrap-menu-header.scrolled {
+    background-color: rgba(255,255,255,0.85); 
+}
+.wrap-menu-header.scrolled .main_menu > li > a,
+.wrap-menu-header.scrolled .social a {
+    color: #222 !important;
+}
 .trans-0-4 {
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
@@ -478,6 +487,8 @@ m-b-15 {
 .btn1 {
     background: white;
     border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .size1 {
     width: 135px;
@@ -492,3 +503,247 @@ m-b-15 {
     text-transform: uppercase;
 }
 /* End of Slider */
+
+
+
+
+
+/* Welecome Section Starts */
+
+.bg1-pattern {
+    background-image: url(./assets/pattern1.png.webp);
+    background-repeat: repeat;
+}
+
+.p-b-105 {
+    padding-bottom: 105px;
+}
+
+.p-t-120 {
+    padding-top: 120px;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.p-b-30 {
+    padding-bottom: 30px;
+}
+
+.p-t-45 {
+    padding-top: 45px;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.tit2 {
+    font-family: Courgette;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #d61c22;
+}
+
+.tit3 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.m-b-35 {
+    margin-bottom: 35px;
+}
+
+.m-t-5 {
+    margin-top: 5px;
+}
+
+.size3 {
+    max-width: 513px;
+}
+
+.m-l-r-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.m-b-22 {
+    margin-bottom: 22px;
+}
+p {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+}
+
+.txt4 {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.p-b-30 {
+    padding-bottom: 30px;
+}
+
+.m-l-10 {
+    margin-left: 10px;
+}
+.p-b-30 {
+    padding-bottom: 30px;
+}
+.hov-img-zoom {
+    display: block;
+    overflow: hidden;
+}
+
+.bo-rad-10 {
+    border-radius: 10px;
+}
+.size2 {
+    max-width: 390px;
+}
+.m-l-r-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.hov-img-zoom img {
+    width: 100%;
+    -webkit-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    transition: all 0.6s;
+}
+.col-mid-6 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Welcome Ends */
+
+/* Section Intro Starts */
+
+.header-intro {
+    background-attachment: fixed;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.p-b-158 {
+    padding-bottom: 158px;
+}
+
+.p-t-135 {
+    padding-top: 135px;
+}
+
+.tit2 {
+    font-family: Courgette;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #d61c22;
+}
+
+.p-r-15 {
+    padding-right: 15px;
+}
+.p-l-15 {
+    padding-left: 15px;
+}
+.tit4 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 6px;
+}
+
+.p-t-3 {
+    padding-top: 3px;
+}
+.p-b-133 {
+    padding-bottom: 133px;
+}
+
+.p-t-77 {
+    padding-top: 77px;
+}
+.bg-white {
+    background-color: #fff !important;
+}
+.col-md-4 {
+    gap: 30px;
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.p-t-30 {
+    padding-top: 30px;
+    display: inline;
+}
+.hov-img-zoom {
+    display: block;
+    overflow: hidden;
+}
+
+.bo-rad-10 {
+    border-radius: 10px;
+}
+
+a {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+}
+.hov-img-zoom img {
+    width: 100%;
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+}
+.p-t-35 {
+    padding-top: 35px;
+}
