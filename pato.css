@@ -58,11 +58,14 @@ a {
     font-weight: 400;
     font-size: 15px;
     line-height: 1.7;
+    text-decoration: none;
     color: #666666;
     margin: 0px;
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
 }
+
+
 
 @media (max-width: 992px) {
     .wrap_menu {
@@ -137,13 +140,25 @@ ul, li {
 .social a {
     font-size: 15px;
     color: white;
+    margin: 5px;
 }
 
 .btn-show-sidebar {
     width: 26px;
     height: 15px;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+.flex-l-m {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-start;
+    -ms-align-items: center;
+    align-items: center;
+}
+.m-l-33 {
+    margin-left: 33px;
 }
 
 
@@ -192,6 +207,10 @@ ul, li {
     text-align: center;
 }
 
+.t-center a:hover {
+    color: #ec1d25;
+}
+
 .p-r-60 {
     padding-right: 60px;
 }
@@ -228,11 +247,66 @@ h2, h3, h4 {
     flex-wrap: wrap;
 }
 
+.btn3 {
+    background: #111111;
+    border-radius: 10px;
+}
+.size13 {
+    width: 150px;
+    height: 40px;
+}
+
+.txt11 {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.flex-c-m {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-l-r-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .item-gallery-sidebar {
     display: block;
     position: relative;
     width: calc((100% - 30px) / 3);
     margin: 5px;
+}
+
+a {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666666;
+    margin: 0px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+}
+
+.wrap-pic-w img {
+    width: 100%;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 /* End Sidebar */
@@ -344,5 +418,77 @@ button.next { right: 20px; }
 .dot.active,
 .dot:hover {
   background: #ec1d25;
+}
+
+.flex-col-c-m {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sizefull {
+    width: 100%;
+    height: 100%;
+}
+
+.p-r-15 {
+    padding-right: 15px;
+}
+.p-l-15 {
+    padding-left: 15px;
+}
+.p-b-170 {
+    padding-bottom: 170px;
+}
+
+.p-t-150 {
+    padding-top: 150px;
+}
+
+.txt1 {
+    font-family: Courgette;
+    font-size: 60px;
+    line-height: 1.1;
+    color: white;
+}
+
+m-b-15 {
+    margin-bottom: 15px;
+}
+
+
+
+.tit1 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 90px;
+    line-height: 1.1;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+}
+
+.m-b-37 {
+    margin-bottom: 37px;
+}
+.btn1 {
+    background: white;
+    border-radius: 10px;
+}
+.size1 {
+    width: 135px;
+    height: 40px;
+}
+.txt3 {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.1;
+    color: #ec1d25;
+    text-transform: uppercase;
 }
 /* End of Slider */
