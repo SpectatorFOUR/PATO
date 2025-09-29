@@ -706,9 +706,10 @@ p {
     background-color: #fff !important;
 }
 .col-md-4 {
-    gap: 30px;
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .row {
     display: flex;
@@ -747,3 +748,4 @@ a {
 .p-t-35 {
     padding-top: 35px;
 }
+
